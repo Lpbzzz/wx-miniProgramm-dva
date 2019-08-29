@@ -1,12 +1,12 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import './index.scss'
-import { AtButton } from 'taro-ui'
+import { AtButton, AtInput } from 'taro-ui'
 
 export default class Index extends Component {
 
   config = {
-    navigationBarTitleText: '唐杰'
+    navigationBarTitleText: '唐杰2',
   }
 
   componentWillMount() { }
@@ -19,10 +19,11 @@ export default class Index extends Component {
 
   componentDidHide() { }
 
+
   render() {
     return (
       <View className='index'>
-        <AtButton type='primary'>测试的</AtButton>
+        <AtButton type='primary'>登录</AtButton>
       </View>
     )
   }

@@ -12,9 +12,7 @@ import './app.scss'
 class App extends Component {
 
   config = {
-    pages: [
-      'pages/index/index'
-    ],
+    pages: ['pages/auth/login', 'pages/index/index', 'pages/auth/reg'],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
@@ -23,17 +21,17 @@ class App extends Component {
     }
   }
 
-  componentDidMount () {}
+  componentDidMount() { }
 
-  componentDidShow () {}
+  componentDidShow() { }
 
-  componentDidHide () {}
+  componentDidHide() { }
 
-  componentDidCatchError () {}
+  componentDidCatchError() { }
 
   // 在 App 类中的 render() 函数没有实际作用
   // 请勿修改此函数
-  render () {
+  render() {
     return (
       <Index />
     )
