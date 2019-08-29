@@ -6,7 +6,7 @@ import { AtButton } from 'taro-ui'
 export default class Index extends Component {
 
   config = {
-    navigationBarTitleText: '首页'
+    navigationBarTitleText: '唐杰'
   }
 
   componentWillMount() { }
