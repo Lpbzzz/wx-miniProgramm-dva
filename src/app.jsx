@@ -12,12 +12,22 @@ import './app.scss'
 class App extends Component {
 
   config = {
-    pages: ['pages/auth/login', 'pages/index/index', 'pages/auth/reg'],
+    pages: [
+      'pages/useHooks/Hooks',
+      'pages/auth/login',
+      'pages/index/index',
+      'pages/auth/reg',
+    ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
+      navigationBarTextStyle: 'black',
+    },
+    permission: {
+      'scope.userLocation': {
+        desc: '你的位置信息将用于获取上报位置'
+      }
     }
   }
 

@@ -1,6 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
-import './index.scss'
 import { AtButton, AtInput, AtForm } from 'taro-ui'
 
 export default class Reg extends Component {

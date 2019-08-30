@@ -2,7 +2,7 @@
 	"miniprogramRoot": "dist/",
 	"projectname": "tangjie",
 	"description": "唐杰微信小程序",
-	"appid": "touristappid",
+	"appid": "wxd16fe7549acaca39",
 	"setting": {
 		"urlCheck": false,
 		"es6": false,
