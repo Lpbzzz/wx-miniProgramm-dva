@@ -5,7 +5,7 @@ import { AtButton, AtInput, AtForm } from 'taro-ui'
 export default class Login extends Component {
 
     config = {
-        navigationBarTitleText: '登录页'
+        navigationBarTitleText: '登录页-dev分支的'
     }
 
     testClickHandel = () => {
