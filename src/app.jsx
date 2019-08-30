@@ -1,6 +1,12 @@
 import Taro, { Component } from '@tarojs/taro'
 import Index from './pages/index'
 
+import dva from './dva'
+import models from './model'
+import { Provider } from '@tarojs/redux'
+import '@tarojs/async-await'
+import action from './utils/action'
+
 import './app.scss'
 
 // 如果需要在 h5 环境中开启 React Devtools
@@ -9,6 +15,14 @@ import './app.scss'
 //   require('nerv-devtools')
 // }
 
+const dvaApp = dva.createApp({
+  initialState: {},
+  models: models,
+  onError(e, dispatch) {
+    dispatch(action("sys/error", e));
+  },
+});
+const store = dvaApp.getStore();
 class App extends Component {
 
   config = {
@@ -43,7 +57,9 @@ class App extends Component {
   // 请勿修改此函数
   render() {
     return (
-      <Index />
+      <Provider store={store}>
+        <Index />
+      </Provider>
     )
   }
 }
