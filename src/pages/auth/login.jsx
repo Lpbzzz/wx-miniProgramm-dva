@@ -30,8 +30,8 @@ export default class Login extends Component {
         return (
             <View className='index'>
                 <AtForm>
-                    <AtInput type='text' name='userName' placeholder="请输入用户名"></AtInput>
-                    <AtInput type='password' name='password' placeholder="请输入密码"></AtInput>
+                    <AtInput type='text' name='userName' placeholder='请输入用户名'></AtInput>
+                    <AtInput type='password' name='password' placeholder='请输入密码'></AtInput>
                     <AtButton type='primary' onClick={this.testClickHandel}>登录</AtButton>
                 </AtForm>
                 <Text className='reg-login-jump' onClick={() => Taro.redirectTo({ url: '/pages/auth/reg' })}>没已有账号？点击去注册</Text>

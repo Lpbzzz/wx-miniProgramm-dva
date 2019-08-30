@@ -1,11 +1,11 @@
 import Taro, { Component } from '@tarojs/taro'
-import Index from './pages/index'
-
-import dva from './dva'
-import models from './model'
 import { Provider } from '@tarojs/redux'
 import '@tarojs/async-await'
+
+import Index from './pages/index'
 import action from './utils/action'
+import dva from './dva'
+import models from './model'
 
 import './app.scss'
 
@@ -25,6 +25,9 @@ const dvaApp = dva.createApp({
 const store = dvaApp.getStore();
 class App extends Component {
 
+  componentDidMount() {
+
+  }
   config = {
     pages: [
       'pages/useHooks/Hooks',
@@ -44,8 +47,6 @@ class App extends Component {
       }
     }
   }
-
-  componentDidMount() { }
 
   componentDidShow() { }
 
