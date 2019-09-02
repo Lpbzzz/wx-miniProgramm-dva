@@ -20,12 +20,22 @@ export default class Hooks extends Component {
         super(...arguments)
 
     }
+    componentDidMount(){
+        wx.cloud.init()
+    }
+    btnClick=()=>{
+        wx.getLocation({
+            success:function(r){
+                console.log(r)
+            }
+        })
+    }
 
     render() {
         console.log(this.props)
         return (
             <View>
-                123
+                <Button onClick={this.btnClick}></Button>
             </View>
         )
     }
