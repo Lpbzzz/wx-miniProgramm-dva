@@ -30,10 +30,8 @@ class App extends Component {
   }
   config = {
     pages: [
-      'pages/useHooks/Hooks',
-      'pages/auth/login',
-      'pages/index/index',
-      'pages/auth/reg',
+      'pages/auth/reSetPassword',
+      'pages/auth/regist',
     ],
     window: {
       backgroundTextStyle: 'light',
